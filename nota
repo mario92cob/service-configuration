@@ -1,0 +1,8 @@
+Correr el siguiente comando desde la carpeta raiz de service-configuration para registrar las instancias dentro de Vault
+
+vault kv put secret/product-microservice @product-microservice.json
+vault kv put secret/booking-microservice @booking-microservice.json
+
+Este comando sirve para iniciar el servidor de vault (por cmd)
+
+vault server --dev --dev-root-token-id="00000000-0000-0000-0000-000000000000"
